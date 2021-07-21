@@ -39,6 +39,10 @@ app.use("/api", productRoutes);
 app.use("/api", orderRoutes);
 app.use("/api", paymentBRoutes);
 
+app.get('/', (req, res) => {
+  res.send('App is Running.');
+});
+
 //PORT
 const port = process.env.PORT || 8000;
 
